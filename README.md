@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+![github expo explorer](https://github.com/farisphp/github-repo-explorer/blob/main/images/home-preview.png?raw=true)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Github Expo Explorer
 
-Currently, two official plugins are available:
+Find a user and their public repositories by their username.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website is built with:
 
-## Expanding the ESLint configuration
+- [Octokit/Rest.js](https://github.com/octokit/rest.js)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Vite](https://vitejs.dev)
+- [ReactJS](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Vitest](https://vitest.dev)
+- [Eslint](https://eslint.org)
+- [Prettier](https://prettier.io)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+#### Search User
+
+Find a user by their username
+![Search user](https://github.com/farisphp/github-repo-explorer/blob/main/images/user-preview.png?raw=true)
+
+#### List Public Repositories of User
+
+Find a user by their username
+![List Public Repositories of User](https://github.com/farisphp/github-repo-explorer/blob/main/images/search-preview.png?raw=true)
+
+### Responsive website
+
+Fully responsive website
+<img src="https://github.com/farisphp/github-repo-explorer/blob/main/images/responsive_preview.png?raw=true" height="500px" />
+
+## Getting Started
+
+### Install
+
+Clone repo.
+
+```bash
+git clone https://github.com/farisphp/github-repo-explorer.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Access the project directory.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd github-repo-explorer
 ```
+
+Install dependencies.
+
+```bash
+pnpm install
+```
+
+Serve with hot reload at <http://localhost:5173>.
+
+```bash
+pnpm run dev
+```
+
+### Lint
+
+```bash
+pnpm run lint
+```
+
+### Typecheck
+
+```bash
+pnpm run typecheck
+```
+
+### Build
+
+```bash
+pnpm run build
+```
+
+## License
+
+This project is licensed under the MIT License.
