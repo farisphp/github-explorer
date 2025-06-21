@@ -1,6 +1,11 @@
 {
   "name": "github-exporer",
   "private": true,
+  "author": {
+    "name": "Faris Perwira",
+    "email": "faris.perwira@gmail.com",
+    "url": "https://github.com/farisphp"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {
